@@ -13,3 +13,14 @@ body{
     height: 100vh;
     background-size:cover ;
 }
+
+.section-title::before{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
