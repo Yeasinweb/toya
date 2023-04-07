@@ -1,0 +1,15 @@
+:root{
+    --primary: #fea116;
+    --light: #f1f8ff;
+    --dark:#0f172b;
+}
+
+body{
+    background-color: #fff;
+}
+
+.banner_image{
+    background-image:url(./image/banner_bg.jpg);
+    height: 100vh;
+    background-size:cover ;
+}
