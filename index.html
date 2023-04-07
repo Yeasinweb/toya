@@ -44,9 +44,21 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
+                    <div class="search-container  d-lg-block d-none">
+                      <form action="/search" method="get">
+                        <input class="search expandright border p-0 m-0" id="searchright" type="search" name="q" placeholder="Search">
+                        <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                      </form>
+                    </div>
+                    <div class="search-container d-lg-none d-block">
+                      <form action="/search" method="get">
+                        <input class="search border p-0 m-0" id="searchleft" type="search" name="q" placeholder="Search">
+                        <label class="button searchbutton" for="searchleft"><span class="mglass">&#9906;</span></label>
+                      </form>
+                    </div>
+                    <!-- <a class="nav-link active" aria-current="page" href="#">
                       <img src="./image/search.png">
-                    </a>
+                    </a> -->
                   </li>
                   <li class="nav-item mx-lg-5">
                     <a class="nav-link" href="#">
@@ -56,8 +68,8 @@
                   <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                   </li> -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item dropdown border-0">
+                    <a class="nav-link dropdown-toggle-header border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src="./image/menu.png">
                     </a>
                     <ul class="dropdown-menu" style="">
