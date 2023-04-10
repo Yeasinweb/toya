@@ -12,6 +12,7 @@ body{
     background-image:url(./image/banner_bg.jpg);
     height: 100vh;
     background-size:cover ;
+    overflow: hidden;
 }
 
 .section-title::before{
@@ -43,7 +44,7 @@ body{
 .deals_image{
     background-image:url(./image/deals.jpg);
     background-repeat: no-repeat;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 150px;
 }
 
