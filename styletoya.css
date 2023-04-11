@@ -48,6 +48,14 @@ body{
     padding-bottom: 150px;
 }
 
+.On_Sale_image{
+    background-image:url(./image/On-Sale_bg.jpg);
+    height: 442px;
+    background-size:cover ;
+    overflow: hidden;
+
+}
+
 /* for search css */
 
 
