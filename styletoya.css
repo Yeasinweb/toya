@@ -48,13 +48,20 @@ body{
     padding-bottom: 150px;
 }
 
-.On_Sale_image{
-    background-image:url(./image/On-Sale_bg.jpg);
-    height: 442px;
-    background-size:cover ;
-    overflow: hidden;
-
+.on_sale_top{
+    position: relative;
+    margin-top: -140px;
+    z-index:6;
 }
+
+.On_Sale_ima{
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
 
 /* for search css */
 
