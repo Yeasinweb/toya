@@ -98,7 +98,21 @@ body{
     box-shadow: 0 5px 15px 0 rgba(182, 182, 182, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
 
-
+.featured_texted {
+    position: relative;
+  } 
+  
+  .featured_text {
+    position: absolute;
+    top: 80px;
+    right: 64%;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+  }
 
 /*-----hover end --------*/
 
