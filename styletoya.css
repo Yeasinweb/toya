@@ -90,6 +90,26 @@ body{
     transform: scale(1);
 }
 
+
+/*--------*/
+
+.featured_image_mobile {
+    position:relative;
+}
+
+.featured_info_mobile {
+    position: absolute;
+    flex-direction: row;
+    top: 100%;
+    right: -20%;
+    margin: 0;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    transform-origin: 0 0;
+    transform: rotate(-180deg);
+}
+
 /*--------hover end cart icon----*/
 
 .instagram_image:hover{
@@ -100,6 +120,7 @@ body{
     box-shadow: 0 5px 15px 0 rgba(182, 182, 182, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
 
+/*---------hover text------------*/
 
 .featured_texted {
     position: relative;
@@ -107,10 +128,12 @@ body{
   
   .featured_text {
     position: absolute;
-    top: 25%;
-    right:0;
-    left:0;
-    width: 80px;
+    /* margin-top: -100%; */
+    top: 40%;
+    left: 0;
+    margin: 0;
+    float: left;
+    width: 50%;
     height: 30px;
     text-align: center;
     border: 1px solid #000000;
