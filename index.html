@@ -25,6 +25,22 @@
 
     <script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
 
+    <!-- Font Awesome -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+      />
+      <!-- Google Fonts -->
+      <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+      />
+      <!-- MDB -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+      rel="stylesheet"
+      />
+
   </head>
   <body>
 
@@ -94,47 +110,50 @@
               <span><img src="./image/menu.png"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+              <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Shop</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Pages
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Signup</a></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Disabled</a>
+                  <a class="nav-link">Blog</a>
                 </li>
               </ul>
-              <img src="./image/cat.png">
+              <img class="me-5 d-none d-lg-block" src="./image/cat.png">
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-
-          <div class="row justify-content-between d-lg-none mt-3">
-            <div class="col-2"> <img src="./image/cat.png"> </div>
-            <div class="col-10">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success d-none d-lg-block" type="submit">Search</button>
               </form>
             </div>
           </div>
 
         </nav>
+
+        <div class="container-fluid">
+          <div class="row justify-content-between d-lg-none mt-3">
+            <div class="col-2"> <img src="./image/cat.png"> </div>
+            <div class="col-10 col-md-8">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
     </div>
 
@@ -241,9 +260,47 @@
       </div>
       <div class="col-lg-3 col-md-4 col-12 mt-lg-5 mt-md-5 mt-3">
         <div class="Featured d-flex ms-lg-5">
-          <h6 style="color: #00c9b7;"> <a class="text-reset text-decoration-none" href="#"> Feature</a></h6>
+          <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex1-tab-1"
+                data-mdb-toggle="tab"
+                href="#ex1-tabs-1"
+                role="tab"
+                aria-controls="ex1-tabs-1"
+                aria-selected="true"
+                >Tab 1</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-mdb-toggle="tab"
+                href="#ex1-tabs-2"
+                role="tab"
+                aria-controls="ex1-tabs-2"
+                aria-selected="false"
+                >Tab 2</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-3"
+                data-mdb-toggle="tab"
+                href="#ex1-tabs-3"
+                role="tab"
+                aria-controls="ex1-tabs-3"
+                aria-selected="false"
+                >Tab 3</a
+              >
+            </li>
+          </ul>
+          <!-- <h6 style="color: #00c9b7;"> <a class="text-reset text-decoration-none" href="#"> Feature</a></h6>
           <h6 class="ms-lg-4 ms-md-4 ms-4"> <a class="text-reset text-decoration-none" href="#">Latest </a></h6>
-          <h6 class="ms-lg-4 ms-md-4 ms-4"> <a class="text-reset text-decoration-none" href="#">Bestseller </a></h6>
+          <h6 class="ms-lg-4 ms-md-4 ms-4"> <a class="text-reset text-decoration-none" href="#">Bestseller </a></h6> -->
         </div>
         
       </div>
@@ -254,460 +311,1387 @@
 <section class="Featured Products image mt-lg-5 mt-md-5 mt-2">
   <div class="container-fluid">
       <div class="max_width" style="max-width: 1600px; margin: auto;">
-        <div class="row">
 
-          <div class="col-lg-2 col-md-3 col-6">
-            <div class="featured_texted Featured_image featured_image_mobile ">
-              <img class="img-fluid" src="./image/featured_products_1.jpg">
-              <div class="featured_text">60 % Off</div>
-              
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
+        <div class="tab-content" id="ex1-content">
+          <div class="tab-pane fade show active"  id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
 
+            <div class="row">
+          
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="featured_texted Featured_image featured_image_mobile ">
+                  <img class="img-fluid" src="./image/featured_products_1.jpg">
+                  <div class="featured_text">60 % Off</div>
+                  
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
               </div>
+    
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_1.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_2.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_3.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_4.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_5.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <!-----2 nd---->
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_5.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_6.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_7.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_8.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_9.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_10.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+              <!-------->
+    
             </div>
+
           </div>
 
-          <div class="col-lg-2 col-md-3 col-6">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_1.jpg">
+          <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
 
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
+            <div class="row">
+          
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="featured_texted Featured_image featured_image_mobile ">
+                  <img class="img-fluid" src="./image/featured_products_1.jpg">
+                  <div class="featured_text">60 % Off</div>
+                  
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
               </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+    
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_1.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
               </div>
-              <!--------->
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_2.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_3.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_4.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_5.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <!-----2 nd---->
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_5.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_6.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_7.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_8.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_9.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_10.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+              <!-------->
+    
             </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
 
-              </div>
-            </div>
           </div>
+          
+          <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
 
-          <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_2.jpg">
+            <div class="row">
+          
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="featured_texted Featured_image featured_image_mobile ">
+                  <img class="img-fluid" src="./image/featured_products_1.jpg">
+                  <div class="featured_text">60 % Off</div>
+                  
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_1.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_2.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_3.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_4.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_5.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <!-----2 nd---->
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_5.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_6.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_7.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_8.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_9.jpg">
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
+                <div class="featured_texted Featured_image">
+                  <img class="img-fluid" src="./image/featured_products_10.jpg">
+                  <div class="featured_text ">60 % Off</div>
+    
+                  <div class="featured_info d-none d-lg-flex">
+                    <img src="./image/view.png">
+                    <img class="mt-2" src="./image/wish.png">
+                    <img class="mt-2" src="./image/compare.png">
+                    <img class="mt-2" src="./image/cart.png">
+                  </div>
+                  <!---------->
+                  <div class="featured_info_mobile d-lg-none">
+                    <img src="./image/view.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
+                    <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
+                  </div>
+                  <!--------->
+                </div>
+                <div class="image-text mt-3">
+                  <p>Mauris sed felis in neque scelerisque </p>
+                </div>
+                <div class="image-text">
+                  <div class="d-flex justify-content-between">
+                    <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                    <div class="star_icon">
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                      <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                  </div>
+    
+                  </div>
+                </div>
+              </div>
+              <!-------->
+    
+            </div>
 
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
           </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_3.jpg">
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_4.jpg">
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_5.jpg">
-              <div class="featured_text ">60 % Off</div>
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-----2 nd---->
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_5.jpg">
-              <div class="featured_text ">60 % Off</div>
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_6.jpg">
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_7.jpg">
-              <div class="featured_text ">60 % Off</div>
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_8.jpg">
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_9.jpg">
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 col-6 mt-lg-5 mt-md-4 mt-4">
-            <div class="featured_texted Featured_image">
-              <img class="img-fluid" src="./image/featured_products_10.jpg">
-              <div class="featured_text ">60 % Off</div>
-
-              <div class="featured_info d-none d-lg-flex">
-                <img src="./image/view.png">
-                <img class="mt-2" src="./image/wish.png">
-                <img class="mt-2" src="./image/compare.png">
-                <img class="mt-2" src="./image/cart.png">
-              </div>
-              <!---------->
-              <div class="featured_info_mobile d-lg-none">
-                <img src="./image/view.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/wish.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/compare.png" style="width: 22px; height: 22px;">
-                <img class="ms-1" src="./image/cart.png" style="width: 22px; height: 22px;">
-              </div>
-              <!--------->
-            </div>
-            <div class="image-text mt-3">
-              <p>Mauris sed felis in neque scelerisque </p>
-            </div>
-            <div class="image-text">
-              <div class="d-flex justify-content-between">
-                <div class="price"><h6><strong>$ 590</strong> </h6></div>
-                <div class="star_icon">
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-                  <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
-              </div>
-
-              </div>
-            </div>
-          </div>
-          <!-------->
-
         </div>
+
+        
         
 
     </div>
@@ -739,6 +1723,7 @@
     </div>
   </div>
 </section>
+
 
 
 <section class="Deals Of The Days mt-5">
@@ -1988,7 +2973,11 @@
 
 
 
-
+      <!-- MDB -->
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+      ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
