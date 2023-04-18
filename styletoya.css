@@ -148,7 +148,10 @@ body{
     border: none;
 }
 
-.nav-tabs  {
-    padding: 0;
-    margin: 0;
+.deals_circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
+
