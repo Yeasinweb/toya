@@ -155,3 +155,23 @@ body{
     height: 100px;
 }
 
+/*--------*/
+
+*/
+body { 
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+.slider-selection {
+	background: #f77500 !important;
+}
+.slider-success .slider-selection {
+	background-color: #5cb85c !important;
+}
+.slider-primary .slider-selection {
+	background-color: #428bca !important;
+}
+.slider-info .slider-selection {
+	background-color: #5bc0de !important;
+}
