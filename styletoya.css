@@ -157,12 +157,6 @@ body{
 
 /*--------*/
 
-*/
-body { 
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
-}
-
 .slider-selection {
 	background: #f77500 !important;
 }
