@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Shop</a>
@@ -69,7 +69,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">About Us</a></li>
-                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                    <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
                     <li><a class="dropdown-item" href="#">Login</a></li>
                     <li><a class="dropdown-item" href="#">Signup</a></li>
                     <li><a class="dropdown-item" href="#">Contact</a></li>
@@ -79,7 +79,10 @@
                   <a class="nav-link">Interior Design</a>
                 </li>
               </ul>
-              <img class="me-5 d-none d-lg-block" src="./image/cat.png">
+              <div class="cart_show">
+                <img class="me-5 d-none d-lg-block" src="./image/cat.png">
+              </div>
+              
               <form class="d-flex" role="search">
                 <input class="form-control me-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success d-none d-lg-block" type="submit" style="border-color: #00c9b7; color: #00c9b7;">Search</button>
@@ -111,7 +114,7 @@
       <div class="withbanner" style="max-width: 1600px; margin: auto;">
         <div class="row d-flex justify-content-center align-items-center py-5">
           <div class="col-12 py-5">
-              <p>Home &nbsp;   /  &nbsp;   Wishlist</p>
+              <p>Home &nbsp;   /  &nbsp;   404 page</p>
           </div>
     
         </div>
@@ -121,86 +124,40 @@
   
   </section>
 
-<section class="Featured Products image mt-lg-5 mt-md-5 mt-2">
-  <div class="container-fluid">
-      <div class="max_width" style="max-width: 1600px; margin: auto;">
-
-        <div class="row">
-            <div class="col-12">
-                <div class="table-responsive">
-                    <table class="table table-responsive">
-                        <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"> <h5>Product</h5> </th>
-                            <th scope="col"></th>
-                            <th scope="col"> <H5>Price</H5>  </th>
-                            <th scope="col"> <H5>Quantity</H5> </th>
-                            <th scope="col"> <H5>Total</H5></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
-                            <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
-                            <td scope="row"> <img src="./image/shoping_cart_1.jpg"> </td>
-                            <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
-                            <td>$ 590.00</td>
-                            <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
-                            <td>$ 590.00</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
-                            <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
-                            <td scope="row"> <img src="./image/shoping_cart_2.jpg"> </td>
-                            <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
-                            <td>$ 590.00</td>
-                            <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
-                            <td>$ 590.00</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
-                            <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
-                            <td scope="row"> <img src="./image/shoping_cart_3.jpg"> </td>
-                            <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
-                            <td>$ 590.00</td>
-                            <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
-                            <td>$ 590.00</td>
-                        </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+<section class="404 page mt-lg-5 mt-md-5 mt-2">
+  <div class="container">
 
         <div class="row mt-3">
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="Update Cart">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control border-0 bg-dark bg-opacity-10" placeholder="Action" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text border-0" id="basic-addon2" style="background-color: #ebdebb;">Apply Action</span>
-                      </div>
+            <div class="col-lg-4 col-md-7 col-sm-8 col-12 m-auto">
+                <div class="mini_Cart_shadow p-3">
+                    <div class="row">
+                        <div class="cross text-end">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="cross">
+                            <h5>Shopping Cart</h5>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="view button d-grid">
+                                <button type="button" class="btn" style="background-color: #1964bc; color: #ffffff;">View Cart</button>
+                                <button type="button" class="btn mt-2" style="background-color: #ebdebb; color: #000000;">Check Out</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="col-lg-7 col-md-8 col-6">
-                <div class="Update Cart text-end">
-                 <button type="button" class="btn shadow-0" style="background-color: #f1f2f2;">Add Selected to Cart</button>
-                </div>
-             </div>
-
-            <div class="col-lg-2 col-md-8 col-6">
-               <div class="Update Cart text-end">
-                <button type="button" class="btn shadow-0" style="background-color: #ebdebb;">Add all to Cart</button>
-               </div>
-            </div>
+           
         </div>
 
-      </div>
   </div>
 
 </section>
@@ -287,6 +244,16 @@
     <script src="./js/wow.min.js"></script>
 
     <script src="./js/custom.js"></script>
+    
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.cart_show').click(function(){
+                $('.mini_Cart_shadow').hide();
+            })
+        });
+
+    </script>
 
   </body>
 </html>
