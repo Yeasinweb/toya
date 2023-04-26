@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Shop</a>
@@ -79,7 +79,10 @@
                   <a class="nav-link">Interior Design</a>
                 </li>
               </ul>
-              <img class="me-5 d-none d-lg-block" src="./image/cat.png">
+              <div class="cart_show">
+                <img class="me-5 d-none d-lg-block" src="./image/cat.png">
+              </div>
+              
               <form class="d-flex" role="search">
                 <input class="form-control me-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success d-none d-lg-block" type="submit" style="border-color: #00c9b7; color: #00c9b7;">Search</button>
@@ -122,123 +125,113 @@
   </section>
 
 <section class="Featured Products image mt-lg-5 mt-md-5 mt-2">
-  <div class="container-fluid">
-      <div class="max_width" style="max-width: 1600px; margin: auto;">
-
-        <div class="row">
-            <div class="col-12">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col"></th>
-                        <th scope="col"> <h5>Product</h5> </th>
-                        <th scope="col"></th>
-                        <th scope="col"> <H5>Price</H5>  </th>
-                        <th scope="col"> <H5>Quantity</H5> </th>
-                        <th scope="col"> <H5>Total</H5></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
-                        <td scope="row"> <img src="./image/shoping_cart_1.jpg"> </td>
-                        <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
-                        <td>$ 590.00</td>
-                        <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
-                        <td>$ 590.00</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
-                        <td scope="row"> <img src="./image/shoping_cart_2.jpg"> </td>
-                        <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
-                        <td>$ 590.00</td>
-                        <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
-                        <td>$ 590.00</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
-                        <td scope="row"> <img src="./image/shoping_cart_3.jpg"> </td>
-                        <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
-                        <td>$ 590.00</td>
-                        <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
-                        <td>$ 590.00</td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-            </div>
-        </div>
+  <div class="container">
 
         <div class="row mt-3">
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="Update Cart">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control border-0 bg-dark bg-opacity-10" placeholder="Coupon Code" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text border-0" id="basic-addon2" style="background-color: #ebdebb;">Apply Code</span>
-                      </div>
+            <div class="col-lg-4 col-md-7 col-sm-8 col-12 m-auto">
+                <div class="mini_Cart_shadow p-3">
+                    <div class="row">
+                        <div class="cross text-end">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="cross">
+                            <h5>Shopping Cart</h5>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                            <div class="mimi_card-image">
+                                <img src="./image/mini_card_image_1.jpg">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-md-8 col-sm-6 col-6">
+                            <p>Babysoy Baby Girls' Kimono...<br>
+                                Quantity: 1<br>
+                                $16.00</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-1 col-sm-2 col-2">
+                            <div class="cross text-end">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                            <div class="mimi_card-image">
+                                <img src="./image/mini_card_image_2.jpg">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-md-8 col-sm-6 col-6">
+                            <p>Babysoy Baby Girls' Kimono...<br>
+                                Quantity: 1<br>
+                                $16.00</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-1 col-sm-2 col-2">
+                            <div class="cross text-end">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                            <div class="mimi_card-image">
+                                <img src="./image/mini_card_image_3.jpg">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-md-8 col-sm-6 col-6">
+                            <p>Babysoy Baby Girls' Kimono...<br>
+                                Quantity: 1<br>
+                                $16.00</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-1 col-sm-2 col-2">
+                            <div class="cross text-end">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                            <div class="mimi_card-image">
+                                <img src="./image/mini_card_image_4.jpg">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-md-8 col-sm-6 col-6">
+                            <p>Babysoy Baby Girls' Kimono...<br>
+                                Quantity: 1<br>
+                                $16.00</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-1 col-sm-2 col-2">
+                            <div class="cross text-end">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
-            <div class="col-lg-9 col-md-8 col-6">
-               <div class="Update Cart text-end">
-                <button type="button" class="btn shadow-0" style="background-color: #f1f2f2;">Update Cart</button>
-               </div>
-            </div>
+           
         </div>
 
-        <div class="row mt-5 mb-5">
-            <div class="col-lg-8 col-md-8 col-6">
-                <div class="Update Cart">
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-6">
-               <div class="Cart Total" style="background-color: #f1f2f2 ;">
-                <div class="Cart Total p-2" style="background-color: #ebdebb;">
-                    <h6>Cart Total</h6>
-                </div>
-
-                <div class="row py-4 px-4">
-                    <div class="col-4">
-                        <p>Subtotal</p>
-                    </div>
-                    <div class="col-8">
-                        <p>$1,269.00</p>
-                    </div>
-                </div>
-                <div class="row py-2 px-4">
-                    <div class="col-4">
-                        <p>Free shipping</p>
-                    </div>
-                    <div class="col-8">
-                        <p>Flat rate $100.00</p>
-                        <p>Shipping to Kaderabad Housing,<br>
-                            Mohammadpur, Dhaka -1207<br> <br>
-                            
-                            Change address</p>
-                    </div>
-                </div>
-
-                <div class="row py-2 px-4">
-                    <div class="col-4">
-                        <p>Total</p>
-                    </div>
-                    <div class="col-8">
-                        <p>$1,269.00</p>
-                    </div>
-                </div>
-
-                <div class="row py-2 px-4">
-                    <button type="button" class="btn btn-dark">Proceed to Checkout</button>
-                    
-                    <a href="#"><h6 class="mt-4" style="color: #00c9b7;">Continue to Shopping</h6></a> 
-                </div>
-
-               </div>
-            </div>
-        </div>
-
-      </div>
   </div>
 
 </section>
@@ -325,6 +318,16 @@
     <script src="./js/wow.min.js"></script>
 
     <script src="./js/custom.js"></script>
+    
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.cart_show').click(function(){
+                $('.mini_Cart_shadow').hide();
+            })
+        });
+
+    </script>
 
   </body>
 </html>
