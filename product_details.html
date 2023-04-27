@@ -4,22 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Toya</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-   
-    <link rel="stylesheet" type="text/css" href="animate.css">
 
     <link rel="stylesheet" type="text/css" href="styletoya.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/xzoom/dist/xzoom.css">
+    <!-- get jQuery from the google apis or use your own -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all" />
+    <!-- XZOOM JQUERY PLUGIN  -->
+    <script type="text/javascript" src="js/xzoom.min.js"></script>
 
 
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/bootstrap-icons.svg">
-
- 
 
     <link rel="stylesheet" type="text/css" href="responsivecss.css">
 
@@ -40,6 +43,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
       rel="stylesheet"
       />
+
+      
 
   </head>
   <body>
@@ -125,8 +130,30 @@
   <div class="container-fluid">
     <div class="product" style="max-width: 1600px; margin: auto;">
         <div class="row mt-3 ">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12 bg-primary">
-                gdgdf
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 bg-white text-center justify-content-center align-items-center ">
+                <img class="xzoom" src="./image/p_01_b_car.jpg" xoriginal="./image/o_01_b_car.jpg" />
+
+                <div class="xzoom-thumbs mt-3">
+
+                <a href="./image/o_01_b_car.jpg">
+                    <img class="xzoom-gallery" width="80" src="./image/t_01_b_car.jpg"  xpreview="./image/p_01_b_car.jpg">
+                </a>
+
+                <a href="./image/o_02_o_car.jpg">
+                    <img class="xzoom-gallery" width="80" src="./image/p_02_o_car.jpg">
+                </a>
+
+                <a href="./image/o_03_r_car.jpg">
+                    <img class="xzoom-gallery" width="80" src="./image/p_03_r_car.jpg">
+                </a>
+
+                <a href="./image/o_04_g_car.jpg">
+                    <img class="xzoom-gallery" width="80" src="./image/p_04_g_car.jpg">
+                </a>
+
+                </div>
+
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6 col-12 px-lg-5 px-md-5">
@@ -211,11 +238,11 @@
                             congue ut. Nullam tincidunt diam nec dictum luctus. Sed blandit ut velit sit amet placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
 
                             <p>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i> Aenean auctor sem ac ex efficitur<br>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i> Non mattis odio bibendum<br>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i> Sed vitae enim at tortor finibus<br>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i> Integer facilisis eleifend vehicula<br>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i> In hac habitasse platea dictumst
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Aenean auctor sem ac ex efficitur<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Non mattis odio bibendum<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Sed vitae enim at tortor finibus<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Integer facilisis eleifend vehicula<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; In hac habitasse platea dictumst
                                 </p>
 
                                 <p>accumsan ut nulla sed, maximus iaculis neque. Aliquam nisi felis, consectetur at pellentesque in, ultricies ut ante.
@@ -362,14 +389,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+
+    <script src="https://unpkg.com/xzoom/dist/xzoom.min.js"></script>
+
     <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+       /* calling script */
+$(".xzoom, .xzoom-gallery").xzoom({tint: '#333', Xoffset: 15});
     </script>
 
-    <script src="./js/wow.min.js"></script>
-
-    <script src="./js/custom.js"></script>
 
   </body>
 </html>
