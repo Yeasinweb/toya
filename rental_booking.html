@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toya</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styletoya.css">
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/xzoom/dist/xzoom.css">
+    <!-- get jQuery from the google apis or use your own -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all" />
+    <!-- XZOOM JQUERY PLUGIN  -->
+    <script type="text/javascript" src="js/xzoom.min.js"></script>
+
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/bootstrap-icons.svg">
+
+    <link rel="stylesheet" type="text/css" href="responsivecss.css">
+
+    <script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+      />
+      <!-- Google Fonts -->
+      <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+      />
+      <!-- MDB -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+      rel="stylesheet"
+      />
+
+      
+
+  </head>
+  <body>
+
+<section class="header">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between align-items-center py-2">
+
+      <div class="max_width" style="max-width: 1600px; margin: auto;">
+        <nav class="navbar navbar-expand-lg bg-light shadow-0">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./image/buynoir_logo.png"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><img src="./image/menu.png"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Signup</a></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Interior Design</a>
+                </li>
+              </ul>
+              <div class="cart_show">
+                <img class="me-5 d-none d-lg-block" src="./image/cat.png">
+              </div>
+              
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success d-none d-lg-block" type="submit" style="border-color: #00c9b7; color: #00c9b7;">Search</button>
+              </form>
+            </div>
+          </div>
+
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row justify-content-between d-lg-none mt-3">
+            <div class="col-2"> <img src="./image/cat.png"> </div>
+            <div class="col-10 col-md-8">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit" style="border-color: #00c9b7; color: #00c9b7;">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="banner d-flex justify-content-center align-items-center" style="background-color: #ebfcfa;">
+    <div class="container-fluid ">
+      <div class="withbanner" style="max-width: 1600px; margin: auto;">
+        <div class="row d-flex justify-content-center align-items-center py-5">
+          <div class="col-12 py-5">
+              <p>Home &nbsp;   /  &nbsp;   Rental Booking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="product details page mt-lg-5 mt-md-5 mt-2">
+  <div class="container-fluid">
+    <div class="product" style="max-width: 1600px; margin: auto;">
+        <div class="row mt-3 ">
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 bg-white text-center justify-content-center align-items-center ">
+                <div class="appoinment">
+                    <img class="img-fluid" src="./image/Rental_Booking.jpg">
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-6 col-12 px-lg-5 px-md-5">
+                <div class="product_text">
+                    <h5>Rental Booking</h5>
+                    <p> 5 N STOCK        &nbsp; &nbsp; &nbsp; &nbsp; 
+
+                        <i class='fas fa-star' style='color:#ffd768; font-size: 12px;'></i>
+                        <i class='fas fa-star' style='color:#ffd768; font-size: 12px;'></i>
+                        <i class='fas fa-star' style='color:#ffd768; font-size: 12px;'></i>
+                        <i class='fas fa-star' style='color:#ffd768; font-size: 12px;'></i>
+                        <i class='fas fa-star' style='color:#ffd768; font-size: 12px;'></i>
+                        &nbsp; &nbsp;   3 reviews 
+                            </p>
+
+                    <p> Effective Price :  $32.31  ( Save 10% )  $35.90 </p>
+                    <p> Item : 	      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;          Home </p>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                    <p> <i class='fas fa-map-marker-alt' style='color:#00c9b7'></i>  &nbsp; Location :     Mohammadpur, Dhaka    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     <u> View on Map</u> </p> 
+                    
+                    <div class="rent mt-4">
+                        <p><strong>Rent an Item</strong>  </p> 
+                        <p> Choose Rent Option </p> 
+                    </div>
+
+                    <div class="radio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Daily Basis
+                            </label>
+                          </div> 
+                          <div class="form-check mt-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Hourly Basis
+                            </label>
+                          </div> 
+                    </div>
+
+                    <div class="rent mt-4">
+                        <p><strong>Select Slot</strong>  </p> 
+                    </div>
+                   
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <input type="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-lg-1 col-md-2 col-3">
+                            <input class="py-2" type="number" id="tentacles" name="tentacles" min="1" max="100">
+                        </div>
+
+                        <div class="col-lg-4 col-md-3 col-4 d-grid">
+                            <button type="button" class="btn py-lg-3" style="background-color: #00c9b7; color: #ebfcfa;">Add To Cart</button>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <img src="./image/love.jpg">
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <img src="./image/compair.jpg">
+                        </div>
+
+                    </div>
+                    <div class="sku mt-4">
+                        <p>SKU :	&nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;     	MN102 </p> 
+                        <p> Categories &nbsp;   &nbsp;   &nbsp;   &nbsp;   	Dress, Girls Dress, Girls Sandals, Jackets, Kurta, Shorts, Skirt, <br>Smock-frock, Trousers, </p> 
+                        <p>Tags :	&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   	Pretium, quis</p>
+                    </div>
+
+                    <div class="share social mt-4">
+                        <p> <i class='fa fa-share' style='color: red'></i> &nbsp; Share this	&nbsp; 
+                            <i class="fa fa-facebook ms-5"></i> 
+                            <i class="fa fa-twitter ms-4"></i>
+                            <i class="fa fa-instagram ms-4"></i>
+                        </p> 
+                    
+                    </div>
+                     
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Description</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Reviews</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <p>Mauris mollis, lorem in dictum vulputate, ante sapien efficitur nulla, et congue orci justo ut libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed id diam felis. Curabitur elementum eros ut diam convallis, sit amet porta tortor pulvinar. Aliquam rhoncus justo lectus, vitae faucibus 
+                            congue ut. Nullam tincidunt diam nec dictum luctus. Sed blandit ut velit sit amet placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+
+                            <p>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Aenean auctor sem ac ex efficitur<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Non mattis odio bibendum<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Sed vitae enim at tortor finibus<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; Integer facilisis eleifend vehicula<br>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; In hac habitasse platea dictumst
+                                </p>
+
+                                <p>accumsan ut nulla sed, maximus iaculis neque. Aliquam nisi felis, consectetur at pellentesque in, ultricies ut ante.
+                                    Pellentesque eu congue nunc. Donec pharetra, turpis in consequat dictum, nibh e</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="border">
+                            <div class="row p-3">
+                                <h6>Customer Reviews</h6>
+                                <div class="col-6">
+                                    <p>No reviews yet</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <p>Write a review</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="row p-3">
+                                <div class="col-12">
+                                    <p>Write A Review</p>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                                        <input type="email" class="form-control border-0" id="exampleInputEmail1" style="background-color: #f1f2f2;" aria-describedby="emailHelp">
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control border-0" style="background-color: #f1f2f2;" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Rating</label>
+                                        <input type="email" class="form-control border-0" style="background-color: #f1f2f2;" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control border-0" style="background-color: #f1f2f2;" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Review</label>
+                                        <input type="email" class="form-control border-0" style="background-color: #f1f2f2;" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="button" class="btn" style="background-color: #00c9b7; color: #ebfcfa;">Submit Review</button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="footer mt-5">
+  <div class="container-fluid">
+        <div class="row mt-5 d-flex justify-content-center align-items-center">
+
+        <div class="col-lg-4 col-md-4 col-12 mt-md-0 mt-lg-0 mt-4 px-lg--5 px-md-5 px-3 ">
+            <div class="buynoir logo mx-lg-5">
+              <div class="address mx-lg-5">
+                <img src="./image/buynoir_footer_logo.png">
+                <div class="address_icon mt-4">
+                  <p> <img src="./image/location.png"> &nbsp; 11 The Avenue, United of Kingdom </p>
+                  <p> <img src="./image/email.png"> &nbsp; themesky@gmail.com </p>
+                  <p> <img src="./image/call.png"> &nbsp; (+00) 025-1234-5678 </p>
+                </div>
+                <p>copy 20223  Powered by SellNoir, A Community Project by sellnoir </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-12 mt-md-0 mt-lg-0 mt-4 ">
+            <div class="buynoir logo">
+              <div class="address">
+                <h4>Other Links</h4>
+                <div class="address_icon mt-4">
+                  <div class="row">
+                    <div class="col-6">
+                      <p>About Us</p>
+                      <p>Customer Service</p>
+                      <p>What’s New</p>
+                      <p>Contact Us</p>
+                    </div>
+                    <div class="col-6">
+                      <p>Order and Returns</p>
+                      <p>Payment Policy</p>
+                      <p>Shipping Policy</p>
+                      <p>Privacy and Cookies Policy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-12 mt-md-0 mt-lg-0 mt-4">
+            <div class="Featured image py-lg-5  p-3 pe-lg-5 text-white" style="background-color: #00c9b7;">
+              <div class="news ms-lg-5 pe-lg-5">
+                <h2>Our Newsletter</h2>
+                <div class="address_icon mt-4 pe-lg-5">
+                      <p>Don't miss out on thousands of super cool products & <br> promotions thousands of super</p>
+                      <div class="input-group mt-4 ">
+                        <input type="text" class="form-control" placeholder="type your email" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                        <div class="input-group-text text-center" id="btnGroupAddon2" style="width: 120px; background-color: #ebdebb;"> <strong>Subscribe</strong></div>
+                      </div>
+                      <p class="mt-5"><img src="./image/fb.png"> <img class="ms-2" src="./image/linkedin.png"> <img class="ms-2" src="./image/twi.png"> <img class="ms-2" src="./image/Instagram-logo.png"> <img class="ms-2" src="./image/youtube.png"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+</section>
+
+
+
+
+
+
+      <!-- MDB -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/xzoom/dist/xzoom.min.js"></script>
+
+    <script>
+       /* calling script */
+$(".xzoom, .xzoom-gallery").xzoom({tint: '#333', Xoffset: 15});
+    </script>
+
+
+  </body>
+</html>
