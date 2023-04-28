@@ -169,3 +169,12 @@ body{
 .slider-info .slider-selection {
 	background-color: #5bc0de !important;
 }
+
+.salam .nav-link {
+    background-color: #f1f2f2;
+}
+
+.salam .nav-link.active {
+    background-color: #ebdebb;
+}
+
