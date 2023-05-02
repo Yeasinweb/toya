@@ -171,11 +171,11 @@ body{
 }
 
 .salam .nav-link {
-    background-color: #f1f2f2;
+    background-color: #f1f2f2 !important;
 }
 
 .salam .nav-link.active {
-    background-color: #ebdebb;
+    background-color: #ebdebb !important;
 }
 
 
