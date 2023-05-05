@@ -960,7 +960,7 @@
             <div class="col-12 d-none d-lg-block d-md-block">
                 <div class="d-flex align-items-start salam">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">My Account</button>
+                      <button class="nav-link active" id="v-pills-home1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home1" type="button" role="tab" aria-controls="v-pills-home1" aria-selected="true">My Account</button>
                       <button class="nav-link" id="v-pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile1" type="button" role="tab" aria-controls="v-pills-profile1" aria-selected="false">Profile</button>
                       <button class="nav-link" id="v-pills-Address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Address" type="button" role="tab" aria-controls="v-pills-Address" aria-selected="false">Address</button>
                       <button class="nav-link" id="v-pills-Reviews-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Reviews" type="button" role="tab" aria-controls="v-pills-Reviews" aria-selected="false">Reviews</button>
@@ -972,7 +972,7 @@
 
                     <div class="tab-content w-100" id="v-pills-tabContent">
 
-                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                      <div class="tab-pane fade show active" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home1-tab" tabindex="0">
                         <h5>Hello Kelix (not Kelix? Log out)</h5>
                         <p>From your account dashboard you can view your recent order, manage your shipping and billing address, <br>
                             and edit your password and account details</p>
@@ -1297,11 +1297,11 @@
                         
                           <div class="row">
                 
-                            <div class="col-lg-2 col-md-3 col-6">
+                            <div class="col-lg-2 col-md-3 col-6 d-lg-block d-md-none">
                               
                             </div>
                   
-                            <div class="col-lg-2 col-md-3 col-6">
+                            <div class="col-lg-2 col-md-3 col-6 d-md-none d-lg-block">
                                 <!------
                                 <i class="fa fa-trash-o"></i>
                               <div class="featured_texted Featured_image">
@@ -1387,7 +1387,7 @@
                 
                             </div>
                   
-                            <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                            <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-0 mt-4">
                                 <i class="fa fa-trash-o"></i>
                               <div class="featured_texted Featured_image">
                                 <img class="img-fluid" src="./image/special_products_5.jpg">
@@ -1415,7 +1415,7 @@
                 
                             </div>
                   
-                            <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                            <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-0 mt-4">
                                 <i class="fa fa-trash-o"></i>
                               <div class="featured_texted Featured_image">
                                 <img class="img-fluid" src="./image/special_products_8.jpg">
@@ -1521,11 +1521,11 @@
                       <div class="tab-pane fade" id="v-pills-orders1" role="tabpanel" aria-labelledby="v-pills-orders1-tab" tabindex="0">
 
                         <div class="row">
-                          <div class="col-4">
+                          <div class="col-lg-4 col-md-6">
                             <p>Items Per Page</p>
                           </div>
 
-                          <div class="col-1">
+                          <div class="col-lg-1 col-md-6">
                             <select class="form-select" aria-label="Default select example">
                               <option selected>5</option>
                               <option value="1">10</option>
@@ -1534,7 +1534,7 @@
                             </select>
                           </div>
 
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-6 mt-md-3">
                             <select class="form-select" aria-label="Default select example">
                               <option selected>Filter</option>
                               <option value="1">One</option>
@@ -1542,7 +1542,7 @@
                               <option value="3">Three</option>
                             </select>
                           </div>
-                          <div class="col-4">
+                          <div class="col-lg-4 col-md-6 mt-md-3">
                             <div class="input-group mb-3">
                               <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2">
                               <span class="input-group-text" id="basic-addon2">Search</span>
@@ -1648,11 +1648,11 @@
                       <div class="tab-pane fade" id="v-pills-downloadable-products1" role="tabpanel" aria-labelledby="v-pills-downloadable-products1-tab" tabindex="0">
 
                         <div class="row">
-                          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                          <div class="col-lg-4 col-md-6">
                             <p>Items Per Page</p>
                           </div>
 
-                          <div class="col-lg-1 col-md-1 col-sm-6 col-6">
+                          <div class="col-lg-1 col-md-6">
                             <select class="form-select" aria-label="Default select example">
                               <option selected>5</option>
                               <option value="1">10</option>
@@ -1661,7 +1661,7 @@
                             </select>
                           </div>
 
-                          <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                          <div class="col-lg-2 col-md-6 mt-md-3">
                             <select class="form-select" aria-label="Default select example">
                               <option selected>Filter</option>
                               <option value="1">One</option>
@@ -1669,13 +1669,14 @@
                               <option value="3">Three</option>
                             </select>
                           </div>
-                          <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                          <div class="col-lg-4 col-md-6 mt-md-3">
                             <div class="input-group mb-3">
                               <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2">
                               <span class="input-group-text" id="basic-addon2">Search</span>
                             </div>
                           </div>
                         </div>
+
                         <div class="table-responsive">
                           <table class="table table-hover table-bordered">
                             <thead>
