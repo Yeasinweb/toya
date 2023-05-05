@@ -178,4 +178,6 @@ body{
     background-color: #ebdebb !important;
 }
 
-
+.order_color:hover{
+    background-color: #ebdebb;
+}
