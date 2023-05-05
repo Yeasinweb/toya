@@ -132,17 +132,842 @@
     <div class="product" style="max-width: 1600px; margin: auto;">
         <div class="row mt-3 ">
 
-            <div class="col-12">
+          <div class="col-12 d-lg-none d-md-none">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <select class="form-select" aria-label="Account Navigation" onchange="showTab(this.value)">
+                  <option value="v-pills-home">My Account</option>
+                  <option value="v-pills-profile">Profile</option>
+                  <option value="v-pills-messages">Address</option>
+                  <option value="v-pills-settings">Reviews</option>
+                  <option value="v-pills-wishlist">Wishlist</option>
+                  <option value="v-pills-compare">Compare</option>
+                  <option value="v-pills-orders">Orders</option>
+                  <option value="v-pills-downloadable-products">Downloadable Products</option>
+              </select>
+            </div>
+          
+            <div class="tab-content mt-4">
+
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <h5>Hello Kelix (not Kelix? Log out)</h5>
+                  <p>From your account dashboard you can view your recent order, manage your shipping and billing address, <br>
+                      and edit your password and account details</p>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+                  <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                      <div class="my-dropzone">
+                        <img class="img-fluid" src="./image/profile.png">
+                        <i class='fas fa-edit' style='font-size:20px; color:#00c9b7'></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                      <h6>Fist Name</h6>
+                      <p>Software Engineer</p>
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Fist Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+                    <div class="col-12 ">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Password Change<br>
+                          Current password ( Leave blank to leave unchanged )</label>
+                        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Password Change<br>
+                          ( Leave blank to leave unchanged )</label>
+                        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Confirm New Password</label>
+                        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirm New Password">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-12">
+                      <button type="button" class="btn" style="background-color: #ebdebb; color: black;">Save Change</button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  
+                    <div class="row align-items-center">
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="my-dropzone">
+                          <img class="img-fluid" src="./image/profile.png">
+                          <i class='fas fa-edit' style='font-size:20px; color:#00c9b7'></i>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <h6>Fist Name</h6>
+                        <p>Software Engineer</p>
+                      </div>
+                     </div>
+
+                     <div class="row mt-5">
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Fist Name</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                      </div>
+                      <div class="col-12 ">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                      </div>
+                     </div>
+
+                     <div class="row mt-2">
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="type" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address">
+                        </div>
+                      </div>
+                     </div>
+
+                     <div class="row mt-2">
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">City / Towne</label>
+                          <input type="type" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="City / Town">
+                        </div>
+                      </div>
+                     </div>
+
+                     <div class="row mt-2">
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Postcode/ZIP</label>
+                          <input type="type" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Postcode/ZIP">
+                        </div>
+                      </div>
+                     </div>
+
+                     <div class="row mt-2">
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">State/Province</label>
+                          <input type="type" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="State/Province">
+                        </div>
+                      </div>
+                     </div>
+
+                     <div class="row mt-2">
+                      <div class="col-12">
+                        <button type="button" class="btn" style="background-color: #ebdebb; color: black;">Save Change</button>
+                      </div>
+                     </div>
+                  
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+                    <div class="row">
+                      <div class="col-lg-2 col-md-2 col-4">
+                        <div class="review">
+                          <img class="img-fluid" src="./image/review_1.png">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-8">
+                        <p><i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i></p>
+                        <p>Premium Quality Reviewed by Lattyman Chan</p>
+                        <hr>
+                        <p>This Sofa us awesome! Would recommend to erveryone <br></p>
+                        <p>I'm ordering mine next week</p>
+                        <p style="color: #00c9b7;"> <strong>View this product</strong> </p>
+                        <button type="button" class="btn btn-primary" style="background-color: #00c9b7;">Delete</button>
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-lg-2 col-md-2 col-4">
+                        <div class="review">
+                          <img class="img-fluid" src="./image/review_2.png">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-8">
+                        <p><i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i></p>
+                        <p>Premium Quality Reviewed by Lattyman Chan</p>
+                        <hr>
+                        <p>This Sofa us awesome! Would recommend to erveryone <br></p>
+                        <p>I'm ordering mine next week</p>
+                        <p style="color: #00c9b7;"> <strong>View this product</strong> </p>
+                        <button type="button" class="btn btn-primary" style="background-color: #00c9b7;">Delete</button>
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-lg-2 col-md-2 col-4">
+                        <div class="review">
+                          <img class="img-fluid" src="./image/review_3.png">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-8">
+                        <p><i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i></p>
+                        <p>Premium Quality Reviewed by Lattyman Chan</p>
+                        <hr>
+                        <p>This Sofa us awesome! Would recommend to erveryone <br></p>
+                        <p>I'm ordering mine next week</p>
+                        <p style="color: #00c9b7;"> <strong>View this product</strong> </p>
+                        <button type="button" class="btn btn-primary" style="background-color: #00c9b7;">Delete</button>
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-lg-2 col-md-2 col-4">
+                        <div class="review">
+                          <img class="img-fluid" src="./image/review_4.png">
+                        </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-8">
+                        <p><i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i>
+                          <i class="fa fa-star" style="font-size:12px;color:#ffbb28"></i></p>
+                        <p>Premium Quality Reviewed by Lattyman Chan</p>
+                        <hr>
+                        <p>This Sofa us awesome! Would recommend to erveryone <br></p>
+                        <p>I'm ordering mine next week</p>
+                        <p style="color: #00c9b7;"> <strong>View this product</strong> </p>
+                        <button type="button" class="btn btn-primary" style="background-color: #00c9b7;">Delete</button>
+                      </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab">
+                        
+                    <div class="row">
+                      <div class="col-12">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th scope="col"></th>
+                                      <th scope="col"></th>
+                                      <th scope="col"> <h5>Product</h5> </th>
+                                      <th scope="col"></th>
+                                      <th scope="col"> <H5>Price</H5>  </th>
+                                      <th scope="col"> <H5>Quantity</H5> </th>
+                                      <th scope="col"> <H5>Total</H5></th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                      <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
+                                      <td scope="row"> <img class="img-fluid" src="./image/shoping_cart_1.jpg"> </td>
+                                      <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
+                                      <td>$ 590.00</td>
+                                      <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
+                                      <td>$ 590.00</td>
+                                  </tr>
+          
+                                  <tr>
+                                      <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                      <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
+                                      <td scope="row"> <img class="img-fluid" src="./image/shoping_cart_2.jpg"> </td>
+                                      <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
+                                      <td>$ 590.00</td>
+                                      <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
+                                      <td>$ 590.00</td>
+                                  </tr>
+          
+                                  <tr>
+                                      <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                      <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
+                                      <td scope="row"> <img class="img-fluid" src="./image/shoping_cart_3.jpg"> </td>
+                                      <td scope="row"> <p> Mauris sed felis in neque scelerisque</p> </td>
+                                      <td>$ 590.00</td>
+                                      <td><input type="number" id="tentacles" name="tentacles" min="1" max="100"></td>
+                                      <td>$ 590.00</td>
+                                  </tr>
+          
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <div class="row mt-3">
+                      <div class="col-lg-3 col-md-4 col-6">
+                          <div class="Update Cart">
+                              <div class="input-group mb-3">
+                                  <input type="text" class="form-control border-0 bg-dark bg-opacity-10" placeholder="Action" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <span class="input-group-text border-0" id="basic-addon2" style="background-color: #ebdebb;">Apply Action</span>
+                                </div>
+                          </div>
+                      </div>
+          
+                      <div class="col-lg-7 col-md-8 col-6">
+                          <div class="Update Cart text-end">
+                           <button type="button" class="btn shadow-0" style="background-color: #f1f2f2;">Add Selected to Cart</button>
+                          </div>
+                       </div>
+          
+                      <div class="col-lg-2 col-md-8 col-6">
+                         <div class="Update Cart">
+                          <button type="button" class="btn shadow-0" style="background-color: #ebdebb;">Add all to Cart</button>
+                         </div>
+                      </div>
+                  </div>
+                  
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-compare" role="tabpanel" aria-labelledby="v-pills-compare-tab">
+    
+                    <div class="row">
+          
+                      <div class="col-lg-2 col-md-3 col-6">
+                        
+                      </div>
+            
+                      <div class="col-lg-2 col-md-3 col-6">
+                          <!------
+                          <i class="fa fa-trash-o"></i>
+                        <div class="featured_texted Featured_image">
+                          <img class="img-fluid" src="./image/special_products_2.jpg">
+                        </div>
+            
+                        <div class="image-text mt-3">
+                          <p>Mauris sed felis in neque scelerisque </p>
+                        </div>
+                        <div class="image-text">
+                          <div class="d-flex justify-content-between">
+                            <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                            <div class="star_icon">
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                          </div>
+                          </div>
+                        </div>
+          
+                        <div class="image-text mt-3">
+                          <p style="color: #00c9b7;">Add to Cart</p>
+                        </div>
+          
+                        ----->
+                      </div>
+            
+                      <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                          <i class="fa fa-trash-o"></i>
+                        <div class="featured_texted Featured_image">
+                          <img class="img-fluid" src="./image/special_products_3.jpg">
+                        </div>
+            
+                        <div class="image-text mt-3">
+                          <p>Mauris sed felis in neque scelerisque </p>
+                        </div>
+                        <div class="image-text">
+                          <div class="d-flex justify-content-between">
+                            <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                            <div class="star_icon">
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                          </div>
+                          </div>
+                        </div>
+          
+                        <div class="image-text mt-3">
+                          <p style="color: #00c9b7;">Add to Cart</p>
+                        </div>
+          
+                      </div>
+            
+                      <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-lg-0 mt-4">
+                          <i class="fa fa-trash-o"></i>
+                        <div class="featured_texted Featured_image">
+                          <img class="img-fluid" src="./image/special_products_4.jpg">
+                        </div>
+          
+                        <div class="image-text mt-3">
+                          <p>Mauris sed felis in neque scelerisque </p>
+                        </div>
+                        <div class="image-text">
+                          <div class="d-flex justify-content-between">
+                            <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                            <div class="star_icon">
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                          </div>
+                          </div>
+                        </div>
+          
+                        <div class="image-text mt-3">
+                          <p style="color: #00c9b7;">Add to Cart</p>
+                        </div>
+          
+                      </div>
+            
+                      <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                          <i class="fa fa-trash-o"></i>
+                        <div class="featured_texted Featured_image">
+                          <img class="img-fluid" src="./image/special_products_5.jpg">
+                        </div>
+            
+                        <div class="image-text mt-3">
+                          <p>Mauris sed felis in neque scelerisque </p>
+                        </div>
+                        <div class="image-text">
+                          <div class="d-flex justify-content-between">
+                            <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                            <div class="star_icon">
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                          </div>
+                          </div>
+                        </div>
+          
+                        <div class="image-text mt-3">
+                          <p style="color: #00c9b7;">Add to Cart</p>
+                        </div>
+          
+                      </div>
+            
+                      <div class="col-lg-2 col-md-3 col-6 mt-lg-0 mt-md-4 mt-4">
+                          <i class="fa fa-trash-o"></i>
+                        <div class="featured_texted Featured_image">
+                          <img class="img-fluid" src="./image/special_products_8.jpg">
+                        </div>
+          
+                        <div class="image-text mt-3">
+                          <p>Mauris sed felis in neque scelerisque </p>
+                        </div>
+                        <div class="image-text">
+                          <div class="d-flex justify-content-between">
+                            <div class="price"><h6><strong>$ 590</strong> </h6></div>
+                            <div class="star_icon">
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                              <i class="fas fa-star" style="font-size: 10px; color: #ffbb28;"></i>
+                          </div>
+                          </div>
+                        </div>
+          
+                        <div class="image-text mt-3">
+                          <p style="color: #00c9b7;">Add to Cart</p>
+                        </div>
+          
+                      </div>
+          
+                    </div>
+                  
+                    <div class="row">
+                      <div class="col-12">
+          
+                          <div class="table-responsive">
+                              <table class="table table-bordered">
+                                  <thead>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="col">Availability</th>
+                                      <th scope="col">In stock</th>
+                                      <th scope="col">In stock</th>
+                                      <th scope="col">Last</th>
+                                      <th scope="col">Handle</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="row">Weight</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="row">Dimensions</th>
+                                      <td>N/A</td>
+                                      <td>N/A</td>
+                                      <td>N/A</td>
+                                      <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="row">Sku</th>
+                                      <td>CD987654317</td>
+                                      <td>CD987654317</td>
+                                      <td>CD987654317</td>
+                                      <td>@CD987654317</td>
+                                    </tr>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="row">Color</th>
+                                      <td>Black</td>
+                                      <td>Black</td>
+                                      <td>Black</td>
+                                      <td>Black</td>
+                                    </tr>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="row">Brand</th>
+                                      <td>Fog</td>
+                                      <td>Fog</td>
+                                      <td>Fog</td>
+                                      <td>Fog</td>
+                                    </tr>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="row">Stype</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <th style="background-color: #ebdebb;" scope="row">Price</th>
+                                      <td>$64.90</td>
+                                      <td>$64.90</td>
+                                      <td>$64.90</td>
+                                      <td>$64.90</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+          
+                      </div>
+                    </div>
+                  
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Items Per Page</p>
+                      </div>
+
+                      <div class="col-6">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>5</option>
+                          <option value="1">10</option>
+                          <option value="2">15</option>
+                          <option value="3">20</option>
+                        </select>
+                      </div>
+
+                      <div class="col-6">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Filter</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-12 mt-3">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <span class="input-group-text" id="basic-addon2">Search</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <table class="table table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Order ID</th>
+                          <th scope="col" style="background-color: #00c9b7; color: #ffffff; ">Date</th>
+                          <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Time</th>
+                          <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Total</th>
+                          <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Status</th>
+                          <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">397</th>
+                          <td>2021-10-29</td>
+                          <td>09:00:46</td>
+                          <td>$1,080.00</td>
+                          <td>Completed</td>
+                          <td><button type="button" class="btn" style="background-color:#ebdebb; color: black;">View</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">397</th>
+                          <td>2021-10-29</td>
+                          <td>09:00:46</td>
+                          <td>$1,080.00</td>
+                          <td>Completed</td>
+                          <td><button type="button" class="btn btn-outline-primary" style="border: 1px solid gray;">View</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">397</th>
+                          <td>2021-10-29</td>
+                          <td>09:00:46</td>
+                          <td>$1,080.00</td>
+                          <td>Completed</td>
+                          <td><button type="button" class="btn btn-outline-primary" style="border: 1px solid gray;">View</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">397</th>
+                          <td>2021-10-29</td>
+                          <td>09:00:46</td>
+                          <td>$1,080.00</td>
+                          <td>Completed</td>
+                          <td><button type="button" class="btn btn-outline-primary" style="border: 1px solid gray;">View</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">397</th>
+                          <td>2021-10-29</td>
+                          <td>09:00:46</td>
+                          <td>$1,080.00</td>
+                          <td>Completed</td>
+                          <td><button type="button" class="btn btn-outline-primary" style="border: 1px solid gray;">View</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">397</th>
+                          <td>2021-10-29</td>
+                          <td>09:00:46</td>
+                          <td>$1,080.00</td>
+                          <td>Completed</td>
+                          <td><button type="button" class="btn btn-outline-primary" style="border: 1px solid gray;">View</button></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">397</th>
+                          <td>2021-10-29</td>
+                          <td>09:00:46</td>
+                          <td>$1,080.00</td>
+                          <td>Completed</td>
+                          <td><button type="button" class="btn btn-outline-primary" style="border: 1px solid gray;">View</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <div class="row mt-2">
+                      <div class="col-12 ">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-downloadable-products" role="tabpanel" aria-labelledby="v-pills-downloadable-products-tab">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Items Per Page</p>
+                      </div>
+
+                      <div class="col-6">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>5</option>
+                          <option value="1">10</option>
+                          <option value="2">15</option>
+                          <option value="3">20</option>
+                        </select>
+                      </div>
+
+                      <div class="col-6">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Filter</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div> 
+                      <div class="col-12 mt-3">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <span class="input-group-text" id="basic-addon2">Search</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-hover table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Order ID</th>
+                            <th scope="col" style="background-color: #00c9b7; color: #ffffff; ">Title</th>
+                            <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Downloads </th>
+                            <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Date</th>
+                            <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Status</th>
+                            <th scope="col" style="background-color: #00c9b7; color: #ffffff;">Remaining Downloads</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">397</th>
+                            <td>Math Book</td>
+                            <td><img src="./image/pdf.png"></td>
+                            <td>2021-10-28</td>
+                            <td> In Stock</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">397</th>
+                            <td>Math Book</td>
+                            <td><img src="./image/pdf.png"></td>
+                            <td>2021-10-28</td>
+                            <td> In Stock</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">397</th>
+                            <td>Math Book</td>
+                            <td><img src="./image/pdf.png"></td>
+                            <td>2021-10-28</td>
+                            <td> In Stock</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">397</th>
+                            <td>Math Book9</td>
+                            <td><img src="./image/pdf.png"></td>
+                            <td>2021-10-28</td>
+                            <td> In Stock</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">397</th>
+                            <td>Math Book</td>
+                            <td><img src="./image/pdf.png"></td>
+                            <td>2021-10-28</td>
+                            <td> In Stock</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">397</th>
+                            <td>Math Book</td>
+                            <td><img src="./image/pdf.png"></td>
+                            <td>2021-10-28</td>
+                            <td> In Stock</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">397</th>
+                            <td>Math Book</td>
+                            <td><img src="./image/pdf.png"></td>
+                            <td>2021-10-28</td>
+                            <td> In Stock</td>
+                            <td>40</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                    
+                    <div class="row mt-2">
+                      <div class="col-12 ">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  
+                </div>
+
+            </div>
+          </div>
+
+          <!---------large-->
+
+            <div class="col-12 d-none d-lg-block d-md-block">
                 <div class="d-flex align-items-start salam">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                       <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">My Account</button>
-                      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Address</button>
-                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Reviews</button>
-                      <button class="nav-link" id="v-pills-wishlist-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist" aria-selected="false">Wishlist</button>
-                      <button class="nav-link" id="v-pills-compare-tab" data-bs-toggle="pill" data-bs-target="#v-pills-compare" type="button" role="tab" aria-controls="v-pills-compare" aria-selected="false">Compare</button>
-                      <button class="nav-link" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false">Orders</button>
-                      <button class="nav-link" id="v-pills-downloadable-products-tab" data-bs-toggle="pill" data-bs-target="#v-pills-downloadable-products" type="button" role="tab" aria-controls="v-pills-downloadable-products" aria-selected="false">Downloadable Products</button>
+                      <button class="nav-link" id="v-pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile1" type="button" role="tab" aria-controls="v-pills-profile1" aria-selected="false">Profile</button>
+                      <button class="nav-link" id="v-pills-Address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Address" type="button" role="tab" aria-controls="v-pills-Address" aria-selected="false">Address</button>
+                      <button class="nav-link" id="v-pills-Reviews-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Reviews" type="button" role="tab" aria-controls="v-pills-Reviews" aria-selected="false">Reviews</button>
+                      <button class="nav-link" id="v-pills-wishlist1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlist1" type="button" role="tab" aria-controls="v-pills-wishlist1" aria-selected="false">Wishlist</button>
+                      <button class="nav-link" id="v-pills-compare1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-compare1" type="button" role="tab" aria-controls="v-pills-compare1" aria-selected="false">Compare</button>
+                      <button class="nav-link" id="v-pills-orders1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders1" type="button" role="tab" aria-controls="v-pills-orders1" aria-selected="false">Orders</button>
+                      <button class="nav-link" id="v-pills-downloadable-products1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-downloadable-products1" type="button" role="tab" aria-controls="v-pills-downloadable-products1" aria-selected="false">Downloadable Products</button>
                     </div>
 
                     <div class="tab-content w-100" id="v-pills-tabContent">
@@ -153,7 +978,7 @@
                             and edit your password and account details</p>
                       </div>
 
-                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                      <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile1-tab" tabindex="0">
                         
                           <div class="row align-items-center">
                             <div class="col-lg-2 col-md-6 col-sm-6 col-6">
@@ -229,7 +1054,7 @@
                         
                       </div>
 
-                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                      <div class="tab-pane fade" id="v-pills-Address" role="tabpanel" aria-labelledby="v-pills-Address-tab" tabindex="0">
                         <div class="row align-items-center">
                           <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                             <div class="my-dropzone">
@@ -301,7 +1126,7 @@
                          </div>
                       </div>
 
-                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                      <div class="tab-pane fade" id="v-pills-Reviews" role="tabpanel" aria-labelledby="v-pills-Reviews-tab" tabindex="0">
 
                         <div class="row">
                           <div class="col-lg-2 col-md-2 col-4">
@@ -389,7 +1214,7 @@
 
                       </div>
 
-                      <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab" tabindex="0">
+                      <div class="tab-pane fade" id="v-pills-wishlist1" role="tabpanel" aria-labelledby="v-pills-wishlist1-tab" tabindex="0">
                         
                         <div class="row">
                           <div class="col-12">
@@ -468,7 +1293,7 @@
                         
                       </div>
 
-                      <div class="tab-pane fade" id="v-pills-compare" role="tabpanel" aria-labelledby="v-pills-compare-tab" tabindex="0">
+                      <div class="tab-pane fade" id="v-pills-compare1" role="tabpanel" aria-labelledby="v-pills-compare1-tab" tabindex="0">
                         
                           <div class="row">
                 
@@ -693,7 +1518,7 @@
                           
                         </div>
 
-                      <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab" tabindex="0">
+                      <div class="tab-pane fade" id="v-pills-orders1" role="tabpanel" aria-labelledby="v-pills-orders1-tab" tabindex="0">
 
                         <div class="row">
                           <div class="col-4">
@@ -796,7 +1621,7 @@
                           </tbody>
                         </table>
                         
-                        <div class="row mt-5">
+                        <div class="row mt-2">
                           <div class="col-12 ">
                             <nav aria-label="Page navigation example">
                               <ul class="pagination">
@@ -820,7 +1645,7 @@
 
                       </div>
 
-                      <div class="tab-pane fade" id="v-pills-downloadable-products" role="tabpanel" aria-labelledby="v-pills-downloadable-products-tab" tabindex="0">
+                      <div class="tab-pane fade" id="v-pills-downloadable-products1" role="tabpanel" aria-labelledby="v-pills-downloadable-products1-tab" tabindex="0">
 
                         <div class="row">
                           <div class="col-lg-4 col-md-4 col-sm-6 col-6">
@@ -925,7 +1750,7 @@
                         </div>
                         
                         
-                        <div class="row mt-5">
+                        <div class="row mt-2">
                           <div class="col-12 ">
                             <nav aria-label="Page navigation example">
                               <ul class="pagination">
@@ -1058,6 +1883,16 @@ $(".xzoom, .xzoom-gallery").xzoom({tint: '#333', Xoffset: 15});
     // =======================================================
     new HSFileAttach('.js-file-attach')
   });
+</script>
+
+<script>
+  function showTab(tabId) {
+      // Hide all tabs
+      $('.tab-pane').removeClass('show active');
+      
+      // Show the selected tab
+      $('#' + tabId).addClass('show active');
+  }
 </script>
 
 
