@@ -181,3 +181,12 @@ body{
 .order_color:hover{
     background-color: #ebdebb;
 }
+
+
+.filter .nav-link {
+    background-color: #ffffff !important;
+}
+
+.filter .nav-link.active {
+    background-color: #ffffff !important;
+}
