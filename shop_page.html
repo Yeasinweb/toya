@@ -4160,12 +4160,14 @@
 
     <script>
       function showTab(tabId) {
-          // Hide all tabs
-          $('.tab-pane').removeClass('show active');
-          
-          // Show the selected tab
-          $('#' + tabId).addClass('show active');
-      }
+    // Hide all tabs
+    $('.nav-link').removeClass('active');
+    $('.tab-pane').removeClass('show active');
+    
+    // Show the selected tab
+    $('#' + tabId + '-tab').addClass('active');
+    $('#' + tabId).addClass('show active');
+    }
     </script>
 
   </body>
