@@ -190,3 +190,8 @@ body{
 .filter .nav-link.active {
     background-color: #ffffff !important;
 }
+
+.text-hover:hover{
+    color: #00c9b7;
+
+}
